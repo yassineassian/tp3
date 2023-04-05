@@ -1,0 +1,16 @@
+1- l'execution du programme avec le chemin d'acces "C:\Windows\hello.dll" donne "hello.dll" sur le console
+
+2- on peut  utiliser ici le design pattern Abstract Factory qui permet de  fournir une interface pour créer des 
+familles d'objets liés sans préciser leur classe concrète.ce design fournit une abstraction pour la création d'objets 
+sans spécifier les détails de leur implémentation.
+ici :
+  -une interface "Analyseur"
+  -deux classes concrètes de "Analyseur": AnalyseurWindows et AnalyseurLinux.
+  
+3-pour le comptage ici on peut ajouter le design pattern Adapter. qui permet de permet de convertir l'interface 
+d'une classe en une autre interface que le client s'attend à utiliser.  
+
+ici :
+  -creation d'une interface "CountFolders"
+  -deux classes "WindowsCountFolders" et "LinuxCountFolders"
+  -un adapteur pour le lien
